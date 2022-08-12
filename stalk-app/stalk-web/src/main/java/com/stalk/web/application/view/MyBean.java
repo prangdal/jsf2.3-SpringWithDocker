@@ -18,7 +18,7 @@ public class MyBean {
 	private UserService userService ;
 	
 	public MyBean() {
-		System.out.println("Created!");
+		System.out.println("Created! v2");
 	}
 
 	public String getFrom() {
