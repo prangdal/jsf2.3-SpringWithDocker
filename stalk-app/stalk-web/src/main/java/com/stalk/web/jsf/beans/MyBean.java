@@ -1,4 +1,4 @@
-package com.stalk.web.application.view;
+package com.stalk.web.jsf.beans;
 
 import java.util.Date;
 
@@ -14,7 +14,7 @@ import com.stalk.services.UserService;
 public class MyBean {
 
 	@Inject
-	@ManagedProperty (value = "#{userService}")
+	@ManagedProperty(value = "#{userService}")
 	private UserService userService ;
 	
 	public MyBean() {
