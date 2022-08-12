@@ -33,14 +33,11 @@
 
 	<dependencies>
 		<!-- stalk - libraries -->
-		<!-- <dependency>
-			<groupId>com.stalk.services</groupId>
-			<artifactId>stalk-services</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency> -->
+		<!-- <dependency> <groupId>com.stalk.services</groupId> <artifactId>stalk-services</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> </dependency> -->
 		<!-- stalk - libraries -->
 
-		<!-- start -Springboot libraries -->
+		<!-- start - Springboot libraries -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
@@ -59,29 +56,29 @@
 
 		<!-- start -Java EE 8 libraries -->
 		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-api</artifactId>
-			<version>8.0</version>
-		</dependency>
- 		<dependency>
 			<groupId>javax.enterprise</groupId>
 			<artifactId>cdi-api</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<!-- end -Java EE 8 libraries -->
-
-
-		<!-- start -JSF Primefaces libraries -->
-		<!-- <dependency> # Implementation of JSF 2.3 <groupId>org.glassfish</groupId> 
-			<artifactId>javax.faces</artifactId> <version>2.4.0</version> </dependency> -->
-		<!-- https://mvnrepository.com/artifact/javax.faces/javax.faces-api -->
-		<dependency>
-			<groupId>javax.faces</groupId>
-			<artifactId>javax.faces-api</artifactId>
-			<version>2.3</version>
+			<version>2.0</version>
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- end -Java EE 8 libraries -->
+
+
+		<!-- start -JSF 2.3 Implementation -->
+<!-- 		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency> -->
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<!-- <dependency> <groupId>javax.faces</groupId> <artifactId>javax.faces-api</artifactId> 
+			<version>2.3</version> <scope>provided</scope> </dependency> -->
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
@@ -92,7 +89,7 @@
 			<artifactId>all-themes</artifactId>
 			<version>${all-themes.version}</version>
 		</dependency>
-		<!-- end -JSF Primefaces libraries -->
+		<!-- start -JSF 2.3 Implementation -->
 
 		<!-- start - support libraries -->
 		<dependency>
