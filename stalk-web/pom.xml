@@ -32,11 +32,6 @@
 
 
 	<dependencies>
-		<!-- stalk - libraries -->
-		<!-- <dependency> <groupId>com.stalk.services</groupId> <artifactId>stalk-services</artifactId> 
-			<version>0.0.1-SNAPSHOT</version> </dependency> -->
-		<!-- stalk - libraries -->
-
 		<!-- start - Springboot libraries -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -66,12 +61,6 @@
 
 
 		<!-- start -JSF 2.3 Implementation -->
-<!-- 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.1</version>
-			<scope>provided</scope>
-		</dependency> -->
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
@@ -151,6 +140,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.3.2</version>
+				<configuration>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+						<webXml>src/main/webapp/WEB-INF/web.xml</webXml>				
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
