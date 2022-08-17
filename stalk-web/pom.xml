@@ -36,6 +36,9 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<!-- start - Springboot libraries -->
+		<!-- <dependency> <groupId>org.apache.tomcat.embed</groupId> <artifactId>tomcat-embed-jasper</artifactId> 
+			<scope>provided</scope> </dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -124,8 +127,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.3.2</version>
 				<configuration>
-						<failOnMissingWebXml>false</failOnMissingWebXml>
-						<webXml>src/main/webapp/WEB-INF/web.xml</webXml>				
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
 				</configuration>
 			</plugin>
 		</plugins>
