@@ -2,11 +2,11 @@ package com.stalk.web.jsf.beans;
 
 import java.util.Date;
 
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Inject;
-import javax.inject.Named;
-
 import com.stalk.services.UserService;
+
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 
 @Named
 @RequestScoped
@@ -20,6 +20,7 @@ public class Hello {
 	}
 
 	public String getName() {
+		System.out.println("\n\n\n got it.. in conroller.");
 		return userService.getName();
 	}
 

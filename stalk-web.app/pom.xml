@@ -26,26 +26,28 @@
 			<artifactId>jakarta.faces</artifactId>
 			<version>4.0.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jboss.weld.servlet/weld-servlet-shaded -->
 		<dependency>
 			<groupId>org.jboss.weld.servlet</groupId>
 			<artifactId>weld-servlet-shaded</artifactId>
-			<version>3.0.0.Final</version>
+			<version>5.0.1.Final</version>
 		</dependency>
- 		<dependency>
+
+		<dependency>
 			<groupId>jakarta.servlet.jsp.jstl</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-			<version>1.2.5</version>
+			<version>3.0.0</version>
 		</dependency>
-		<dependency> <!-- Optional, only when <f:websocket> is used. -->
+<!-- 		<dependency> Optional, only when <f:websocket> is used.
 			<groupId>org.glassfish</groupId>
 			<artifactId>jakarta.json</artifactId>
-			<version>1.1.5</version>
+			<version>2.0.1</version>
 		</dependency>
-		<dependency> <!-- Optional, only when f:validateBean or f:validateWholeBean is used. -->
+		<dependency> Optional, only when f:validateBean or f:validateWholeBean is used.
 			<groupId>org.hibernate.validator</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>6.0.1.Final</version>
-		</dependency>
+			<version>7.0.5.Final</version>
+		</dependency> -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

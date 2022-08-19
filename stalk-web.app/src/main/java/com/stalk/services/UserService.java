@@ -1,6 +1,6 @@
 package com.stalk.services;
 
-import javax.inject.Named;
+import jakarta.inject.Named;
 
 @Named("userService")
 public class UserService {

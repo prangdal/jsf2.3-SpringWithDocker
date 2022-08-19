@@ -33,7 +33,7 @@
 	<display-name>stalk-web-app</display-name>
 	<servlet>
 		<servlet-name>facesServlet</servlet-name>
-		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
