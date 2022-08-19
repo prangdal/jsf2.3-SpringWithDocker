@@ -3,7 +3,6 @@ package com.stalk.web.jsf.beans;
 import java.util.Date;
 
 import javax.enterprise.context.RequestScoped;
-import javax.faces.annotation.ManagedProperty;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -14,11 +13,10 @@ import com.stalk.services.UserService;
 public class MyBean {
 
 	@Inject
-	@ManagedProperty(value = "#{userService}")
 	private UserService userService ;
 	
 	public MyBean() {
-		System.out.println("Created! v2");
+		System.out.println("-------------------- Created! v2 -------------------- ");
 	}
 
 	public String getFrom() {
